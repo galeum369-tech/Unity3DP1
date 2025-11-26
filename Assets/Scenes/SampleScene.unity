@@ -389,8 +389,8 @@ GameObject:
   - component: {fileID: 564835045}
   - component: {fileID: 564835044}
   - component: {fileID: 564835043}
-  - component: {fileID: 564835047}
   - component: {fileID: 564835048}
+  - component: {fileID: 564835047}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -497,11 +497,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 564835042}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a03f6dfd7862d6459e5c1baf37e2dd0, type: 3}
+  m_Script: {fileID: 11500000, guid: 7978b0b5b02ed60439459b1c176e46bf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  paddingX: 0.028
+  paddingX: 0.04
   paddingY: 0.05
 --- !u!114 &564835048
 MonoBehaviour:
@@ -512,12 +512,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 564835042}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: caaf8db37515e9141842e24d2697fcf6, type: 3}
+  m_Script: {fileID: 11500000, guid: 185528af95f95c049a7cdb420c524aa6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletFactory: {fileID: 6884963238796980715, guid: 1d5152ec74ac4df46be6f3f9532b8412, type: 3}
+  bulletFactory: {fileID: 8175882260338756233, guid: 5ecd9f6984605bc46a9a51fe8b4d6307, type: 3}
   firePoint: {fileID: 1787293043}
-  bulletPool: []
 --- !u!1 &832575517
 GameObject:
   m_ObjectHideFlags: 0
@@ -576,7 +575,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 859678262}
-  - component: {fileID: 859678263}
   m_Layer: 0
   m_Name: DestroyZone
   m_TagString: Untagged
@@ -601,19 +599,6 @@ Transform:
   - {fileID: 1010534793}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &859678263
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 859678261}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 88b02fda25bf67644bd07391f6d6c7b0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Player: {fileID: 564835042}
 --- !u!1 &1010534792
 GameObject:
   m_ObjectHideFlags: 0
@@ -734,6 +719,7 @@ GameObject:
   - component: {fileID: 1611913378}
   - component: {fileID: 1611913377}
   - component: {fileID: 1611913376}
+  - component: {fileID: 1611913379}
   m_Layer: 0
   m_Name: DestoryZone
   m_TagString: Untagged
@@ -830,6 +816,19 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1611913374}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1611913379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1611913374}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c376dd75b93cfeb43a7e590af5557ee4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player: {fileID: 564835042}
 --- !u!1 &1787293042
 GameObject:
   m_ObjectHideFlags: 0
