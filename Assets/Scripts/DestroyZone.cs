@@ -51,6 +51,12 @@ public class DestroyZone : MonoBehaviour
             //이놈아가 제일 최적화 잘된 코드임
             pf.ReloadPool(other.gameObject);
         }
+
+        // 충돌한 오브젝트의 레이어가 "Enemy"인 경우
+        if (other.gameObject.layer == LayerMask.NameToLayer("Enemy"))
+        {
+            Destroy(other.gameObject);
+        }
     }
 
 }
